@@ -17,3 +17,7 @@ wget https://git.io/JKEfj -O openvpn-install.sh && bash openvpn-install.sh
 Once it ends, you can run it again to add more users, remove some of them or even completely uninstall OpenVPN.
 
 sudo wget https://git.io/JKPum -O /root/callapi.sh && sudo chmod +x /root/callapi.sh && sudo mkdir /root/backup
+
+firewall-cmd --permanent --add-port=51820/tcp
+
+firewall-cmd --permanent --add-port=51820/udp
