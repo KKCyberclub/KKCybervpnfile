@@ -1,10 +1,10 @@
 #!/bin/bash
-table=server_belgium
-image=bl_flag
-country=Belgium
+table=server_usa
+image=us_flag
+country=usip195
 for entry in /root/*.conf
 do
-  response=$(curl -sb -H -F "file=@$entry" -F "table=$table" -F "image=$image" -F "country=$country" http://51.81.216.133/vpn/postapi.php)
+  response=$(curl -sb -H -F "file=@$entry" -F "table=$table" -F "image=$image" -F "country=$country" https://api.vokka.net/api/trpn/postapi.php)
   if [ $response == "success" ]; then
     filename=$(basename $entry)
     mv $entry /root/backup/$filename
