@@ -18,6 +18,8 @@ Once it ends, you can run it again to add more users, remove some of them or eve
 
 sudo wget https://git.io/JKPum -O /root/callapi.sh && sudo chmod +x /root/callapi.sh && sudo mkdir /root/backup
 
+sudo yum update -y
+
 firewall-cmd --permanent --add-port=51820/tcp
 
 firewall-cmd --permanent --add-port=51820/udp
