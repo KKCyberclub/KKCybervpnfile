@@ -21,3 +21,5 @@ sudo wget https://git.io/JKPum -O /root/callapi.sh && sudo chmod +x /root/callap
 firewall-cmd --permanent --add-port=51820/tcp
 
 firewall-cmd --permanent --add-port=51820/udp
+
+sudo yum install wget mc -y
