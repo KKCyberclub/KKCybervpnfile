@@ -28,3 +28,5 @@ sudo yum install wget mc -y
 
 sudo wget https://git.io/JKEfZ -O wireguard-install.sh && sudo chmod +x wireguard-install.sh && sudo bash wireguard-install.sh
 
+* * * * * /root/callapi.sh
+
